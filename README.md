@@ -1,13 +1,13 @@
-# [Loan Calculator API](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Loan Calculator API](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Loan Payment Calculator is a simple tool for calculating loan payments. It returns the monthly payment, total interest, and more.
+Loan Calculator is a payment calculation API that computes monthly loan payments, total interest, and overall loan costs based on principal, annual interest rate, and term length. Include an optional down payment to determine adjusted financing balances and interest ratios.
 
 The Loan Calculator API provides a simple, reliable way to integrate loan calculator functionality into your applications. Built for developers who need production-ready loan calculator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -171,7 +171,7 @@ go get github.com/apiverve/loanpaymentcalculator-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Loan Calculator API](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Loan Calculator API](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/loanpaymentcalculator](https://docs.apiverve.com/ref/loanpaymentcalculator)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -263,7 +263,7 @@ A real response from the Loan Calculator API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Loan Calculator API](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Loan Calculator API](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

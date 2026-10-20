@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Loan Calculator
   description: >-
-    Loan Payment Calculator is a simple tool for calculating loan payments. It
-    returns the monthly payment, total interest, and more.
+    Loan Calculator is a payment calculation API that computes monthly loan
+    payments, total interest, and overall loan costs based on principal, annual
+    interest rate, and term length. Include an optional down payment to
+    determine adjusted financing balances and interest ratios.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/loanpaymentcalculator:
     post:
-      summary: Calculate Loan Payment
+      summary: Loan Calculator
       description: >-
         Calculate loan payments based on the loan amount, interest rate, and
         loan term
@@ -93,6 +95,11 @@ paths:
                 loanTerm:
                   type: integer
                   description: The loan term in years
+                downpayment:
+                  type: number
+                  description: >-
+                    Amount paid up front, subtracted from the loan amount before
+                    interest is applied
               required:
                 - loanAmount
                 - interestRate
