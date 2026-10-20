@@ -27,5 +27,11 @@ namespace APIVerve.API.LoanCalculator
         /// </summary>
         [JsonProperty("loanTerm")]
         public int LoanTerm { get; set; }
+
+        /// <summary>
+        /// Amount paid up front, subtracted from the loan amount before interest is applied
+        /// </summary>
+        [JsonProperty("downpayment")]
+        public double? Downpayment { get; set; }
     }
 }
