@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -26,7 +26,8 @@ class LoanpaymentcalculatorAPIClient:
     VALIDATION_RULES = {
         "loanAmount": {"type": "number", "required": True, "min": 0},
         "interestRate": {"type": "number", "required": True, "min": 0, "max": 100},
-        "loanTerm": {"type": "integer", "required": True, "min": 1, "max": 50}
+        "loanTerm": {"type": "integer", "required": True, "min": 1, "max": 50},
+        "downpayment": {"type": "number", "required": False, "min": 0, "default": 0}
     }
 
     # Format validation patterns
