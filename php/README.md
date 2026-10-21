@@ -1,6 +1,6 @@
 # Loan Calculator API - PHP Package
 
-Loan Payment Calculator is a simple tool for calculating loan payments. It returns the monthly payment, total interest, and more.
+Loan Calculator is a payment calculation API that computes monthly loan payments, total interest, and overall loan costs based on principal, annual interest rate, and term length. Include an optional down payment to determine adjusted financing balances and interest ratios.
 
 ## Installation
 
@@ -118,11 +118,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/loanpaymentcalculator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/loanpaymentcalculator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

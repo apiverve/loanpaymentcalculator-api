@@ -19,7 +19,7 @@ use APIVerve\Loanpaymentcalculator\Exceptions\ValidationException;
  * print_r($response);
  * ```
  *
- * @see https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -36,7 +36,8 @@ class Client
     private const VALIDATION_RULES = [
         'loanAmount' => ['type' => 'number', 'required' => true, 'min' => 0],
         'interestRate' => ['type' => 'number', 'required' => true, 'min' => 0, 'max' => 100],
-        'loanTerm' => ['type' => 'integer', 'required' => true, 'min' => 1, 'max' => 50]
+        'loanTerm' => ['type' => 'integer', 'required' => true, 'min' => 1, 'max' => 50],
+        'downpayment' => ['type' => 'number', 'required' => false, 'min' => 0]
     ];
 
     /**

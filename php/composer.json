@@ -1,7 +1,7 @@
 {
     "name": "apiverve/loanpaymentcalculator",
-    "description": "Loan Payment Calculator is a simple tool for calculating loan payments. It returns the monthly payment, total interest, and more.",
-    "version": "1.2.0",
+    "description": "Loan Calculator is a payment calculation API that computes monthly loan payments, total interest, and overall loan costs based on principal, annual interest rate, and term length. Include an optional down payment to determine adjusted financing balances and interest ratios.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "loanpaymentcalculator",
-        "loan payment calculator",
-        "loan",
-        "loan payments",
-        "loan payment calculator api",
-        "loan api"
+        "payment calculation api",
+        "loan calculator api",
+        "dealership payment calculator api",
+        "loan repayment api",
+        "finance calculator api"
     ],
-    "homepage": "https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/loanpaymentcalculator",
