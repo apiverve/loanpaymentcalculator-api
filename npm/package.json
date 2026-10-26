@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/loanpaymentcalculator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Loan Calculator is a payment calculation API that computes monthly loan payments, total interest, and overall loan costs based on principal, annual interest rate, and term length. Include an optional down payment to determine adjusted financing balances and interest ratios.",
   "main": "index.js",
   "types": "index.d.ts",
