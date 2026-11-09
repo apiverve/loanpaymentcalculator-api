@@ -17,7 +17,11 @@ const api = new loanpaymentcalculatorAPI({
 var query = {
   "loanAmount": 32000,
   "interestRate": 8.5,
-  "loanTerm": 6
+  "loanTerm": 6,
+  "extraPayment": 100,
+  "startDate": "2026-12-01",
+  "paymentFrequency": "biweekly",
+  "fees": 800
 };
 
 // Make the API request using callback

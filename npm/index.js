@@ -30,7 +30,7 @@ class loanpaymentcalculatorWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/loanpaymentcalculator';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"loanAmount":{"type":"number","required":true,"min":0},"interestRate":{"type":"number","required":true,"min":0,"max":100},"loanTerm":{"type":"integer","required":true,"min":1,"max":50},"downpayment":{"type":"number","required":false,"min":0,"default":0}};
+        this.validationRules = {"loanAmount":{"type":"number","required":true,"min":0},"interestRate":{"type":"number","required":true,"min":0,"max":100},"loanTerm":{"type":"integer","required":true,"min":1,"max":50},"downpayment":{"type":"number","required":false,"min":0,"default":0},"extraPayment":{"type":"number","required":false,"min":0},"startDate":{"type":"string","required":false,"format":"date"},"paymentFrequency":{"type":"string","required":false,"default":"monthly"},"fees":{"type":"number","required":false,"min":0}};
     }
 
     /**

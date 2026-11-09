@@ -35,6 +35,11 @@ declare module '@apiverve/loanpaymentcalculator' {
       interestRatio:        number | null;
       formatted:            Formatted;
       amortizationSchedule: AmortizationSchedule[];
+      payoffDate:           Date | null;
+      extraPayment:         ExtraPayment;
+      paymentFrequency:     PaymentFrequency;
+      fees:                 number | null;
+      apr:                  number | null;
   }
   
   interface AmortizationSchedule {
@@ -44,11 +49,33 @@ declare module '@apiverve/loanpaymentcalculator' {
       remainingBalance: number | null;
   }
   
+  interface ExtraPayment {
+      extraMonthlyPayment:  number | null;
+      monthlyPayment:       number | null;
+      payoffMonths:         number | null;
+      monthsSaved:          number | null;
+      totalInterestPaid:    number | null;
+      totalPayment:         number | null;
+      interestSaved:        number | null;
+      payoffDate:           Date | null;
+      amortizationSchedule: AmortizationSchedule[];
+  }
+  
   interface Formatted {
       loanAmount:        null | string;
       monthlyPayment:    null | string;
       totalInterestPaid: null | string;
       totalPayment:      null | string;
+  }
+  
+  interface PaymentFrequency {
+      frequency:         null | string;
+      paymentsPerYear:   number | null;
+      numberOfPayments:  number | null;
+      payment:           number | null;
+      totalInterestPaid: number | null;
+      totalPayment:      number | null;
+      interestSaved:     number | null;
   }
 
   export default class loanpaymentcalculatorWrapper {
