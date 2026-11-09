@@ -61,6 +61,21 @@ namespace APIVerve.API.LoanCalculator
 
         [JsonProperty("amortization_schedule")]
         public AmortizationSchedule[] AmortizationSchedule { get; set; }
+
+        [JsonProperty("payoff_date")]
+        public DateTimeOffset? PayoffDate { get; set; }
+
+        [JsonProperty("extra_payment")]
+        public ExtraPayment ExtraPayment { get; set; }
+
+        [JsonProperty("payment_frequency")]
+        public PaymentFrequency PaymentFrequency { get; set; }
+
+        [JsonProperty("fees")]
+        public long? Fees { get; set; }
+
+        [JsonProperty("apr")]
+        public double? Apr { get; set; }
     }
 
     public partial class AmortizationSchedule
@@ -78,6 +93,36 @@ namespace APIVerve.API.LoanCalculator
         public double? RemainingBalance { get; set; }
     }
 
+    public partial class ExtraPayment
+    {
+        [JsonProperty("extra_monthly_payment")]
+        public long? ExtraMonthlyPayment { get; set; }
+
+        [JsonProperty("monthly_payment")]
+        public double? MonthlyPayment { get; set; }
+
+        [JsonProperty("payoff_months")]
+        public long? PayoffMonths { get; set; }
+
+        [JsonProperty("months_saved")]
+        public long? MonthsSaved { get; set; }
+
+        [JsonProperty("total_interest_paid")]
+        public double? TotalInterestPaid { get; set; }
+
+        [JsonProperty("total_payment")]
+        public double? TotalPayment { get; set; }
+
+        [JsonProperty("interest_saved")]
+        public double? InterestSaved { get; set; }
+
+        [JsonProperty("payoff_date")]
+        public DateTimeOffset? PayoffDate { get; set; }
+
+        [JsonProperty("amortization_schedule")]
+        public AmortizationSchedule[] AmortizationSchedule { get; set; }
+    }
+
     public partial class Formatted
     {
         [JsonProperty("loanAmount")]
@@ -91,6 +136,30 @@ namespace APIVerve.API.LoanCalculator
 
         [JsonProperty("totalPayment")]
         public string TotalPayment { get; set; }
+    }
+
+    public partial class PaymentFrequency
+    {
+        [JsonProperty("frequency")]
+        public string Frequency { get; set; }
+
+        [JsonProperty("payments_per_year")]
+        public long? PaymentsPerYear { get; set; }
+
+        [JsonProperty("number_of_payments")]
+        public long? NumberOfPayments { get; set; }
+
+        [JsonProperty("payment")]
+        public double? Payment { get; set; }
+
+        [JsonProperty("total_interest_paid")]
+        public double? TotalInterestPaid { get; set; }
+
+        [JsonProperty("total_payment")]
+        public double? TotalPayment { get; set; }
+
+        [JsonProperty("interest_saved")]
+        public double? InterestSaved { get; set; }
     }
 
     public partial class Premium

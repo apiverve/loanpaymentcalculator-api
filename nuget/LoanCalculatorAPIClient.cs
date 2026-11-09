@@ -70,7 +70,11 @@ namespace APIVerve.API.LoanCalculator
             { "loanAmount", new ValidationRule { Type = "number", Required = true, Min = 0 } },
             { "interestRate", new ValidationRule { Type = "number", Required = true, Min = 0, Max = 100 } },
             { "loanTerm", new ValidationRule { Type = "integer", Required = true, Min = 1, Max = 50 } },
-            { "downpayment", new ValidationRule { Type = "number", Required = false, Min = 0 } }
+            { "downpayment", new ValidationRule { Type = "number", Required = false, Min = 0 } },
+            { "extraPayment", new ValidationRule { Type = "number", Required = false, Min = 0 } },
+            { "startDate", new ValidationRule { Type = "string", Required = false, Format = "date" } },
+            { "paymentFrequency", new ValidationRule { Type = "string", Required = false } },
+            { "fees", new ValidationRule { Type = "number", Required = false, Min = 0 } }
         };
 
         /// <summary>Format validation patterns</summary>
