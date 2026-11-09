@@ -27,7 +27,11 @@ class LoanpaymentcalculatorAPIClient:
         "loanAmount": {"type": "number", "required": True, "min": 0},
         "interestRate": {"type": "number", "required": True, "min": 0, "max": 100},
         "loanTerm": {"type": "integer", "required": True, "min": 1, "max": 50},
-        "downpayment": {"type": "number", "required": False, "min": 0, "default": 0}
+        "downpayment": {"type": "number", "required": False, "min": 0, "default": 0},
+        "extraPayment": {"type": "number", "required": False, "min": 0},
+        "startDate": {"type": "string", "required": False, "format": "date"},
+        "paymentFrequency": {"type": "string", "required": False, "default": "monthly"},
+        "fees": {"type": "number", "required": False, "min": 0}
     }
 
     # Format validation patterns
