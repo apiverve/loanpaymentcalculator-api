@@ -1,0 +1,16 @@
+name: apiverve_loanpaymentcalculator
+description: "Loan Calculator is a payment calculation API that computes monthly loan payments, total interest, and overall loan costs based on principal, annual interest rate, and term length. Include an optional down payment to determine adjusted financing balances and interest ratios. On paid plans, optional inputs add an extra-payment payoff plan with months and interest saved, payoff dates from a start date, biweekly or weekly payment figures, and an APR that includes upfront fees."
+version: 1.2.5
+homepage: https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=dart&utm_medium=referral&utm_content=homepage
+repository: https://github.com/apiverve/loanpaymentcalculator-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
