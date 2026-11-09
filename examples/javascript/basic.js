@@ -17,7 +17,11 @@ async function callLoanCalculatorAPI() {
     const requestBody &#x3D; {
     &quot;loanAmount&quot;: 32000,
     &quot;interestRate&quot;: 8.5,
-    &quot;loanTerm&quot;: 6
+    &quot;loanTerm&quot;: 6,
+    &quot;extraPayment&quot;: 100,
+    &quot;startDate&quot;: &quot;2026-12-01&quot;,
+    &quot;paymentFrequency&quot;: &quot;biweekly&quot;,
+    &quot;fees&quot;: 800
 };
 
     const response = await fetch(API_URL, {

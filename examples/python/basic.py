@@ -21,7 +21,11 @@ def call_loanpaymentcalculator_api():
         request_body &#x3D; {
     &#x27;loanAmount&#x27;: 32000,
     &#x27;interestRate&#x27;: 8.5,
-    &#x27;loanTerm&#x27;: 6
+    &#x27;loanTerm&#x27;: 6,
+    &#x27;extraPayment&#x27;: 100,
+    &#x27;startDate&#x27;: &#x27;2026-12-01&#x27;,
+    &#x27;paymentFrequency&#x27;: &#x27;biweekly&#x27;,
+    &#x27;fees&#x27;: 800
 }
 
         headers = {
