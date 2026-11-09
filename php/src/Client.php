@@ -15,7 +15,7 @@ use APIVerve\Loanpaymentcalculator\Exceptions\ValidationException;
  * @example Basic usage
  * ```php
  * $client = new Client('your_api_key');
- * $response = $client->execute(['loanAmount' => 32000, 'interestRate' => 8.5, 'loanTerm' => 6]);
+ * $response = $client->execute(['loanAmount' => 32000, 'interestRate' => 8.5, 'loanTerm' => 6, 'extraPayment' => 100, 'startDate' => '2026-12-01', 'paymentFrequency' => 'biweekly', 'fees' => 800]);
  * print_r($response);
  * ```
  *
@@ -37,7 +37,11 @@ class Client
         'loanAmount' => ['type' => 'number', 'required' => true, 'min' => 0],
         'interestRate' => ['type' => 'number', 'required' => true, 'min' => 0, 'max' => 100],
         'loanTerm' => ['type' => 'integer', 'required' => true, 'min' => 1, 'max' => 50],
-        'downpayment' => ['type' => 'number', 'required' => false, 'min' => 0]
+        'downpayment' => ['type' => 'number', 'required' => false, 'min' => 0],
+        'extraPayment' => ['type' => 'number', 'required' => false, 'min' => 0],
+        'startDate' => ['type' => 'string', 'required' => false, 'format' => 'date'],
+        'paymentFrequency' => ['type' => 'string', 'required' => false],
+        'fees' => ['type' => 'number', 'required' => false, 'min' => 0]
     ];
 
     /**
