@@ -125,7 +125,7 @@ paths:
               properties:
                 loanAmount:
                   type: number
-                  description: The loan amount
+                  description: The loan amount (0 to 1,000,000,000,000)
                 interestRate:
                   type: number
                   description: The interest rate (percentage)
