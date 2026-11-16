@@ -49,7 +49,7 @@ final _formatPatterns = {
 /// For more information, visit: https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [loanAmount] (required) - The loan amount [min: 0]
+/// * [loanAmount] (required) - The loan amount (0 to 1,000,000,000,000) [min: 0, max: 1000000000000]
 /// * [interestRate] (required) - The interest rate (percentage) [min: 0, max: 100]
 /// * [loanTerm] (required) - The loan term in years [min: 1, max: 50]
 /// * [downpayment] - Amount paid up front, subtracted from the loan amount before interest is applied [min: 0]
@@ -64,7 +64,7 @@ class LoanpaymentcalculatorClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'loanAmount': ValidationRule(type: 'number', required: true, min: 0),
+    'loanAmount': ValidationRule(type: 'number', required: true, min: 0, max: 1000000000000),
     'interestRate': ValidationRule(type: 'number', required: true, min: 0, max: 100),
     'loanTerm': ValidationRule(type: 'integer', required: true, min: 1, max: 50),
     'downpayment': ValidationRule(type: 'number', required: false, min: 0),
