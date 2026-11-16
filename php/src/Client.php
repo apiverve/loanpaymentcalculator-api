@@ -34,7 +34,7 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'loanAmount' => ['type' => 'number', 'required' => true, 'min' => 0],
+        'loanAmount' => ['type' => 'number', 'required' => true, 'min' => 0, 'max' => 1000000000000],
         'interestRate' => ['type' => 'number', 'required' => true, 'min' => 0, 'max' => 100],
         'loanTerm' => ['type' => 'integer', 'required' => true, 'min' => 1, 'max' => 50],
         'downpayment' => ['type' => 'number', 'required' => false, 'min' => 0],
