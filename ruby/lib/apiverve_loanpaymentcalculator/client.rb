@@ -19,7 +19,7 @@ module APIVerve
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'loanAmount' => { type: 'number', required: true, min: 0 }, 'interestRate' => { type: 'number', required: true, min: 0, max: 100 }, 'loanTerm' => { type: 'integer', required: true, min: 1, max: 50 }, 'downpayment' => { type: 'number', required: false, min: 0 }, 'extraPayment' => { type: 'number', required: false, min: 0 }, 'startDate' => { type: 'string', required: false, format: 'date' }, 'paymentFrequency' => { type: 'string', required: false }, 'fees' => { type: 'number', required: false, min: 0 } }
+      VALIDATION_RULES = { 'loanAmount' => { type: 'number', required: true, min: 0, max: 1000000000000 }, 'interestRate' => { type: 'number', required: true, min: 0, max: 100 }, 'loanTerm' => { type: 'integer', required: true, min: 1, max: 50 }, 'downpayment' => { type: 'number', required: false, min: 0 }, 'extraPayment' => { type: 'number', required: false, min: 0 }, 'startDate' => { type: 'string', required: false, format: 'date' }, 'paymentFrequency' => { type: 'string', required: false }, 'fees' => { type: 'number', required: false, min: 0 } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {
