@@ -24,7 +24,7 @@ class ValidationError(LoanpaymentcalculatorAPIClientError):
 class LoanpaymentcalculatorAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "loanAmount": {"type": "number", "required": True, "min": 0},
+        "loanAmount": {"type": "number", "required": True, "min": 0, "max": 1000000000000},
         "interestRate": {"type": "number", "required": True, "min": 0, "max": 100},
         "loanTerm": {"type": "integer", "required": True, "min": 1, "max": 50},
         "downpayment": {"type": "number", "required": False, "min": 0, "default": 0},
